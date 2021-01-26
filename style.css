@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B79AAE;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    margin: 0;
+    padding-top: 2rem;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 2rem;
+    margin: auto;
+    width: 1000px;
+    max-width: 100%;
+}
+
+h1 {
+    color: #7f5b74;
+    font-size: 4rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h1 a {
+    transform: scale(0.5);
+}
+
+a {
+    position: relative;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+a::after {
+    /* background will skew but not text in a */
+    background-color: #7f5b74;
+    transform: skew(-20deg);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    flex: 1;
+}
+
+.col:first-child {
+    margin-right: 4rem;
+}
+
+.text {
+    font-size: 2rem;
+}
+
+.text p {
+    font-weight: 200;
+}
+
+img {
+    margin: 3rem 0;
+    width: 100%;
+    box-shadow: 15px 15px #7f5b74;
+}
+
+.shop {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
